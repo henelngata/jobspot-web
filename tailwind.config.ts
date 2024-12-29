@@ -11,9 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        darkBlue: "#130160",
-        brightOrange: "#FF9228"
-
+        "dark-blue": "#130160",
+        "bright-orange": "#FF9228",
+        "lavender-gray": "#AAA6B9",
+        "deep-purple": "#524B6B",
+        "lavender-blush": "#ECE7FC",
+        "slate-purple": "#6F6B80",
       },
     },
   },
