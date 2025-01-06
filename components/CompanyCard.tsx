@@ -13,16 +13,16 @@ interface CompanyCardProps{
 }
 const CompanyCard: React.FC<CompanyCardProps> = ({ img, name, followers })=> {
   return (
-    <Link href="/" className="">
-      <section className="border-2 border-red-950 w-[160px] h-[191px] rounded-lg flex-row-reverse justify-items-center">
+    <Link href="/connections/company" className="">
+      <section className="border-2 border-red-950 px-5 py-3 rounded-lg flex-row-reverse justify-items-center">
         <Image
-          src={"/"}
+          src={"/images/facebook.png"}
           width={46}
           height={46}
           alt={`logo of ${name}`}
         />
         <p className='font-bold text-[14px] my-2'>{name }</p>
-        <p className='font-normal text-[12px] text-lavender-gray mb-2'>{`${followers }followers`}</p>
+        <p className='font-normal text-[12px] text-lavender-gray mb-2'>{`${followers } followers`}</p>
         <button className='border-[1px] border-lavender-gray px-6 py-1 rounded-xl text-[12px]'>follow</button>
       </section>
     </Link>
