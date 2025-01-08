@@ -7,9 +7,10 @@ import React from "react";
 
 const page = () => {
   return (
-    <main>
-      <section>
+    <main className=" bg-gray-100">
+      <section className="mb-4 p-3">
         <Image
+          className="inline-block relative ml-[40%] mb-4"
           src={"/images/facebook.png"}
           width={50}
           height={50}
@@ -21,7 +22,7 @@ const page = () => {
           <p>1 day ago</p>
         </section>
       </section>
-      <section className="flex justify-between ">
+      <section className="flex justify-between  m-4">
         <Link
           className=" flex w-[45%] py-3 rounded-lg  bg-lavender-light items-center place-content-center"
           href="#"
@@ -45,7 +46,7 @@ const page = () => {
           <p className="inline-block text-red-deep text-xs">Vist website</p>
         </Link>
       </section>
-    <CompanyNav/>
+      <CompanyNav />
     </main>
   );
 };

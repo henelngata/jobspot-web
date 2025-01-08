@@ -15,13 +15,13 @@ export default function DynamicComponentSwitcher() {
   const [activeTab, setActiveTab] = useState(tabOptions[0].name);
 
   return (
-    <div className="border-2 border-red-800">
-      <div className="border-2 border-green-400">
-        <nav className="flex space-x-4 mb-6 p-3 border-2 border-red-800 ">
+    <>
+      <section className="bg-white" >
+        <nav className="flex justify-between p-1 mb-6 mx-4 ">
           {tabOptions.map((tab) => (
             <button
               key={tab.name}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition ${
+              className={`px-3 py-2 w-[33%]  rounded-md text-sm font-bold transition ${
                 activeTab === tab.name
                   ? "bg-orange-500 text-white"
                   : "text-gray-700 hover:bg-gray-200"
@@ -32,12 +32,12 @@ export default function DynamicComponentSwitcher() {
             </button>
           ))}
         </nav>
-        <div className="mt-4">
+        <section className="m-4">
           {tabOptions.map(
             (tab) => activeTab === tab.name && <tab.component key={tab.name} />
           )}
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </>
   );
 }

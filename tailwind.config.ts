@@ -22,6 +22,7 @@ export default {
         "lavender-light": "#FAEBEB",
         "red-deep": "#FC4646",
         "orange-deep": "#FCA34D",
+        'gray-light': '#F5F4F6',
       },
     },
   },
