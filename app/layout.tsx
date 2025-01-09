@@ -4,13 +4,10 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import { dmSans } from "@/utils/font";
 
-
-
-
 export const metadata: Metadata = {
   title: "Job app",
   description: "Discover your jobs here",
-  keywords:["jobs"]
+  keywords: ["jobs"],
 };
 
 export default function RootLayout({
@@ -20,11 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.className}  antialiased`}
-      >
+      <body className={`${dmSans.className}  antialiased`}>
         {children}
-        <Nav/>
+       
       </body>
     </html>
   );

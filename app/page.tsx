@@ -1,44 +1,33 @@
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="p-3">
-      <Image
-        className="relative left-[85%]"
-        src="/images/Avatar.svg"
-        width={40}
-        height={40}
-        alt="profile pic"
-      />
-      <h2 className="font-semibold text-xl mb-6">
-        Hello
-        <br />
-        Orlando Diggs.
-      </h2>
-      <section className="bg-darkBlue text-white rounded-sm p-4 flex border-2 border-red-400 h-fit">
-        <section className="border-2 border-red-400">
-          <p className="mb-3">
-            50% off
-            <br />
-            take any courses
-          </p>
-          <Link
-            className="inline-block  bg-brightOrange py-1 px-4 text-xs rounded-sm"
-            href="#"
-          >
-            join now
-          </Link>
-        </section>
-
+    <main className="p-6">
+      <h2 className="font-bold relative left-[80%]">Jobspot</h2>
+      <section className="mt-6">
         <Image
-          className="relative top-[-4em] inline-block border-2 border-red"
-          src="/images/model.svg"
-          width={216}
-          height={1}
-          alt="image of a model"
-        />
+          src={"/images/hero-jobspot.svg"}
+          height={301}
+          width={311}
+          alt="Hero image"
+        ></Image>
       </section>
+      <p className="text-4xl font-bold mt-4">
+        Find Your <span className="block text-bright-orange underline">Dream Job</span> Here!
+      </p>
+      <p className="text-sm text-deep-purple">
+        Explore all the most exciting job roles based on your interest and study
+        major.
+      </p>
+      <Link
+        href="/login"
+        className=" block bg-dark-blue w-[60px] h-[60px] rounded-full place-items-center place-content-center relative left-[80%]"
+      >
+        <FontAwesomeIcon icon={faArrowRightLong} style={{color: "white"}} className="w-[23.16px] h-[25.94px] " />
+      </Link>
     </main>
   );
 }
