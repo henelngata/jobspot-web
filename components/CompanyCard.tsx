@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 
 interface CompanyCardProps{
-  img: any,
+  img: string,
   
   name: string,
   followers: number,

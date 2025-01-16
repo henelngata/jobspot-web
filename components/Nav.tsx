@@ -29,7 +29,7 @@ export default function IconTabs() {
                 : "hover:bg-gray-50 dark:hover:bg-gray-800"
             }`}
           >
-            <Image src={ tab.icon} alt="tab i con " />
+            <Image src={ tab.icon} alt="tab i con " width={24} height={24}/>
             {/* <span
               className={`text-xs ${
                 pathname === tab.href
