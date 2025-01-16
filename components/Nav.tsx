@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, Connection, Chat, Add,Save } from "@/utils/icons";
+import Image from "next/image";
 
 const tabs = [
   { name: "Home", href: "/", icon: Home },
   { name: "Connection", href: "/connections/connect/posts", icon: Connection },
   { name: "Add", href: "/calendar", icon: Add },
   { name: " Chat", href: "/messages", icon: Chat },
-  { name: "Save", href: "/help", icon: Save },
+  { name: "Save", href: "/save", icon: Save },
 ];
 
 export default function IconTabs() {
@@ -28,7 +29,7 @@ export default function IconTabs() {
                 : "hover:bg-gray-50 dark:hover:bg-gray-800"
             }`}
           >
-            <img src={ tab.icon} />
+            <Image src={ tab.icon} alt="tab i con " />
             {/* <span
               className={`text-xs ${
                 pathname === tab.href

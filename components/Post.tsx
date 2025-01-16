@@ -40,8 +40,8 @@ const Post = () => {
         What are the characteristics of a fake job call form?
       </p>
       <p className="text-sm mb-3 text-deep-purple px-4">
-        Because I always find fake job calls so I'm confused which job to take
-        can you share your knowledge here? thank you
+        Because I always find fake job calls so I\&aposm confused which job to
+        take can you share your knowledge here? thank you
       </p>
       <section className="bg-lavender-blush flex justify-between p-4 rounded-b-md">
         <section className=" flex  justify-between w-[40%] ">

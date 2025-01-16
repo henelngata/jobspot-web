@@ -38,10 +38,10 @@ const initialConversations = [
 ];
 
 export default function ChatList() {
-  const [conversations, setConversations] = useState(initialConversations);
+  const [conversations] = useState(initialConversations);
 
   return (
-    <div className="overflow-y-auto h-full">
+    <div className="overflow-y-auto">
       {conversations.map((conversation) => (
         <Link href={"/chat"}>
           <ChatItem key={conversation.id} {...conversation} />

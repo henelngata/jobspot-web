@@ -32,7 +32,7 @@ export default function MessageInput() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-200 p-4 flex items-center">
+    <form onSubmit={handleSubmit} className="border-2 border-bg-red-700 p-3 flex items-center bg-white">
       <input
         type="file"
         ref={fileInputRef}
@@ -43,7 +43,7 @@ export default function MessageInput() {
         variant="ghost"
         size="icon"
         type="button"
-        className="text-gray-500"
+        className="text-deep-purple"
         onClick={triggerFileInput}
       >
         <Paperclip size={24} />
@@ -53,10 +53,10 @@ export default function MessageInput() {
         placeholder="Type a message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="flex-1 mx-2 bg-white"
+        className="flex-1 mx-2 bg-white border-none"
       />
       {file && (
-        <span className="mr-2 text-sm text-gray-600">File: {file.name}</span>
+        <span className="mr-2 text-sm ">File: {file.name}</span>
       )}
       {message.trim() || file ? (
         <Button

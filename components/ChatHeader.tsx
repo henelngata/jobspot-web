@@ -1,6 +1,6 @@
-import { ArrowLeft, Phone, Search, MoreVertical } from "lucide-react";
+import { Phone, Search } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
+
 
 interface ChatHeaderProps {
   name: string;

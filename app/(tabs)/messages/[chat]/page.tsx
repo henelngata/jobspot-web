@@ -1,8 +1,6 @@
 import ChatHeader from "@/components/ChatHeader";
 import MessageInput from "@/components/MessageInput";
 import MessageList from "@/components/MessageList";
-import ChatLayout from "./layout";
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
 
 
  function ChatPage() {
@@ -18,9 +16,5 @@ import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "rea
     </div>
   );
 }
-
-ChatPage.getLayout = (page: any
-
-) => <ChatLayout>{page}</ChatLayout>;
 
 export default ChatPage;

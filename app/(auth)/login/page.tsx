@@ -1,5 +1,5 @@
 import LoginSignupForm from "@/components/Form";
-import InputText from "@/components/InputText";
+
 import React from "react";
 
 const page = () => {

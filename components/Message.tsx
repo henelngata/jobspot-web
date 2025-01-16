@@ -11,14 +11,16 @@ export default function Message({ text, sender, timestamp }: MessageProps) {
     >
       <div className={``}>
         <p
-          className={`max-w-xs lg:max-w-md xl:max-w-lg  rounded- p-3 shadow text-s ${
-            sender === "user" ? "bg-dark-blue text-white" : "bg-pink"
+          className={`max-w-xs lg:max-w-md xl:max-w-lg  rounded- p-4 text-sm  ${
+            sender === "user"
+              ? "bg-dark-blue text-white rounded-s-2xl rounded-tr-2xl"
+              : "bg-pink-light  rounded-e-2xl rounded-tl-2xl "
           }`}
         >
           {text}
         </p>
         <p
-          className={`text-xs mt-1 ${
+          className={`text-[10px] text-lavender-gray mt-1 ${
             sender === "user" ? "text-end" : "text-start"
           }`}
         >

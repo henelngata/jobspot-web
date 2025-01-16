@@ -4,8 +4,8 @@ interface InputTextProps {
   type: string;
   label: string;
   name: string;
-  id: any;
-  placeholder: any;
+  id: string;
+  placeholder: string ;
 }
 
 const InputText: React.FC<InputTextProps> = ({

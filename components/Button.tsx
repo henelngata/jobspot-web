@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Button() {
+export default function Button() {
   return (
     <Link href="/connections/posts"></Link>
   )
