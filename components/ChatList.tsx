@@ -43,7 +43,7 @@ export default function ChatList() {
   return (
     <div className="overflow-y-auto">
       {conversations.map((conversation) => (
-        <Link href={"/chat"}>
+        <Link key={conversation.id} href={"/chat"}>
           <ChatItem key={conversation.id} {...conversation} />
         </Link>
       ))}

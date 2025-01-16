@@ -3,12 +3,12 @@ import Link from 'next/link';
 import React from 'react'
 
 interface CompanyCardProps{
-  img: any,
+  // img: any,
   name: string,
   followers: number,
 
 }
-const CompanyCard: React.FC<CompanyCardProps> = ({ img, name, followers })=> {
+const CompanyCard: React.FC<CompanyCardProps> = ({  name, followers })=> {
   return (
     <Link href="/connections/company" className="">
       <section className="border-2 border-red-950 px-5 py-3 rounded-lg flex-row-reverse justify-items-center">
