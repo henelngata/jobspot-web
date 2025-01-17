@@ -16,7 +16,7 @@ export default function Home() {
         <br />
         Orlando Diggs.
       </h2>
-      <section className="bg-darkBlue text-white rounded-sm p-4 flex border-2 border-red-400 h-fit">
+      <section className="bg-dark-blue text-white rounded-sm flex place-i  border-2 border-red-400 ">
         <section className="border-2 border-red-400">
           <p className="mb-3">
             50% off
@@ -24,7 +24,7 @@ export default function Home() {
             take any courses
           </p>
           <Link
-            className="inline-block  bg-brightOrange py-1 px-4 text-xs rounded-sm"
+            className="inline-block  bg-bright-orange py-1 px-4 text-xs rounded-sm"
             href="#"
           >
             join now
@@ -35,7 +35,7 @@ export default function Home() {
           className="relative top-[-4em] inline-block border-2 border-red"
           src="/images/model.svg"
           width={216}
-          height={1}
+          height={193}
           alt="image of a model"
         />
       </section>
