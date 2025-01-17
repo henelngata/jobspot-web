@@ -16,7 +16,7 @@ export default function Home() {
         <br />
         Orlando Diggs.
       </h2>
-      <section className="bg-darkBlue text-white rounded-sm p-4 flex border-2 border-red-400 h-fit">
+      <section className="bg-dark-blue text-white rounded-sm p-4 flex border-2 border-red-400 h-fit">
         <section className="border-2 border-red-400">
           <p className="mb-3">
             50% off
