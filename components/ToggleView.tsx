@@ -2,26 +2,28 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import JobDescription from './JobDescription'
+import AboutUs from './AboutUs';
+
 
 interface DescriptionToggleProps {
-  jobDescription: string
-  companyDescription: string
+  jobId: string;
 }
 
-export default function ToggleView({ jobDescription, companyDescription }: DescriptionToggleProps) {
+export default function ToggleView({ jobId }: DescriptionToggleProps) {
   const [activeTab, setActiveTab] = useState<'description' | 'company'>('description')
 
   const getButtonClass = (tab: 'description' | 'company') => {
-    return `px-4 py-2 rounded-md transition-colors ${
+    return `px-4 <py-4></py-4> rounded-md transition-colors w-[45%] ${
       activeTab === tab
-        ? 'bg-primary text-primary-foreground'
-        : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
+        ? 'bg-dark-blue text-white'
+        : 'bg-brand-purple text-secondary-foreground hover:bg-secondary/80'
     }`
   }
 
   return (
     <div className="space-y-4">
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 place-content-center">
         <Button
           className={getButtonClass('description')}
           onClick={() => setActiveTab('description')}
@@ -38,7 +40,10 @@ export default function ToggleView({ jobDescription, companyDescription }: Descr
       <div className={`p-4 rounded-md ${
         activeTab === 'description' ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-green-800'
       }`}>
-        {activeTab === 'description' ? jobDescription : companyDescription}
+        {activeTab === 'description' 
+          ? <JobDescription  />
+          : <AboutUs/>
+        }
       </div>
     </div>
   )
