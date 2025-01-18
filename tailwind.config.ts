@@ -25,6 +25,10 @@ export default {
         "orange-deep": "#FCA34D",
         "gray-light": "#F5F4F6",
         "pink-light": "#FAEFE4",
+        'blue-purple': '#AFECFE',
+        'purple-light': '#BEAFFE', 
+        'yellow-light': '#FFD6AD', 
+        'gray-dark': '#9A97AA', 
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
