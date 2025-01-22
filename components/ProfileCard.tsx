@@ -48,40 +48,6 @@ export default function ProfileCard() {
       </CardContent>
     </Card>
 
-    <Card>
-        <CardContent className="pt-6">
-          <ProfileLinkItem
-            icon={<User className="h-5 w-5" />}
-            title="About Me"
-            content={<AboutMeContent content={aboutMe} />}
-            onEdit={() => console.log("Edit About Me")}
-          />
-          <ProfileLinkItem
-            icon={<Briefcase className="h-5 w-5" />}
-            title="Work Experience"
-            content={<WorkExperienceContent jobs={workExperience} />}
-            onEdit={() => console.log("Edit Work Experience")}
-          />
-          <ProfileLinkItem
-            icon={<GraduationCap className="h-5 w-5" />}
-            title="Education"
-            content={<EducationContent education={education} />}
-            onEdit={() => console.log("Edit Education")}
-          />
-          <ProfileLinkItem
-            icon={<Code className="h-5 w-5" />}
-            title="Skills"
-            content={<SkillsContent skills={skills} />}
-            onEdit={() => console.log("Edit Skills")}
-          />
-          <ProfileLinkItem
-            icon={<FileText className="h-5 w-5" />}
-            title="Resume"
-            content={<ResumeContent name={resume} onDelete={() => console.log("Delete Resume")} />}
-            onEdit={() => console.log("Edit Resume")}
-          />
-        </CardContent>
-      </Card>
     </>
   )
 }
