@@ -7,12 +7,9 @@ export default function TabsLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-     <main className="border-2 border-red-400 ">
+    <main>
       {children}
+      <Nav />
     </main>
-    <Nav />
-    </>
-   
   );
 }

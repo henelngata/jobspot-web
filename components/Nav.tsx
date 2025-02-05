@@ -7,7 +7,7 @@ import { Home, Connection, Chat, Add,Save } from "@/utils/icons";
 const tabs = [
   { name: "Home", href: "/", icon: Home },
   { name: "Connection", href: "/connections/connect/posts", icon: Connection },
-  { name: "Add", href: "/add", icon: Add },
+  { name: "Add", href: "/calendar", icon: Add },
   { name: " Chat", href: "/messages", icon: Chat },
   { name: "Save", href: "/help", icon: Save },
 ];
@@ -16,7 +16,7 @@ export default function IconTabs() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0  w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+    <nav className="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
       <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
         {tabs.map((tab) => (
           <Link
