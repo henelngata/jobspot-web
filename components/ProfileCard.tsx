@@ -3,8 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Settings, Pencil, Briefcase, Code, FileText, GraduationCap, User } from "lucide-react"
 import Image from "next/image"
-import { ProfileLinkItem } from "./ProfileCardItem"
-import { AboutMeContent, WorkExperienceContent, EducationContent, SkillsContent, ResumeContent } from "./ProfileContentItems"
+
 
 export default function ProfileCard() {
   const aboutMe =
