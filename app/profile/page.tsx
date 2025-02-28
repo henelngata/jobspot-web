@@ -21,16 +21,16 @@ const page = () => {
   }
 
   const urls = {
-    addAboutMe: "/edit/about-me",
-    editAboutMe: "/edit/about-me",
-    addWorkExperience: "/add/work-experience",
-    editWorkExperience: (id: string) => `/edit/work-experience/${id}`,
+    addAboutMe: "/profile/edit/about-me",
+    editAboutMe: "/profile/edit/about-me",
+    addWorkExperience: "/profile/add/work-experience",
+    editWorkExperience: (id: string) => `/profile/edit/work-experience/${id}`,
     addEducation: "/add/education",
-    editEducation: (id: string) => `/edit/education/${id}`,
-    addSkills: "/edit/skills",
-    editSkills: "/edit/skills",
-    addResume: "/add/resume",
-    editResume: "/edit/resume",
+    editEducation: (id: string) => `/profile/edit/education/${id}`,
+    addSkills: "/profile/edit/skills",
+    editSkills: "/profile/edit/skills",
+    addResume: "/profile/add/resume",
+    editResume: "/profile/edit/resume",
   }
 
   const handleDeleteResume = () => {

@@ -51,13 +51,13 @@ export default function SimpleForm() {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto">
-      <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
-        <CardDescription>Fill out the form below to get in touch with us.</CardDescription>
-      </CardHeader>
+    <section className="w-full max-w-md mx-auto">
+      <section>
+        <h3>Contact Us</h3>
+        <p>Fill out the form below to get in touch with us.</p>
+      </section>
       <form onSubmit={handleSubmit}>
-        <CardContent className="space-y-4">
+        <section className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
             <Input
@@ -101,15 +101,15 @@ export default function SimpleForm() {
               Thank you! Your message has been sent successfully.
             </div>
           )}
-        </CardContent>
+        </section>
 
-        <CardFooter>
+        <section>
           <Button type="submit" className="w-full" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit"}
           </Button>
-        </CardFooter>
+        </section>
       </form>
-    </Card>
+    </section>
   )
 }
 

@@ -7,7 +7,7 @@ import { Home, Connection, Chat, Add,Save } from "@/utils/icons";
 const tabs = [
   { name: "Home", href: "/", icon: Home },
   { name: "Connection", href: "/connections/connect/posts", icon: Connection },
-  { name: "Add", href: "/calendar", icon: Add },
+  { name: "Add", href: "/add", icon: Add },
   { name: " Chat", href: "/messages", icon: Chat },
   { name: "Save", href: "/help", icon: Save },
 ];
